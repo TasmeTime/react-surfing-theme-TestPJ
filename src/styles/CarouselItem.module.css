@@ -1,0 +1,84 @@
+.item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.item .imageContainer {
+  position: relative;
+}
+
+.item .imageContainer img {
+  -webkit-filter: drop-shadow(-4px -30px 65px rgba(0, 0, 0, 0.14));
+          filter: drop-shadow(-4px -30px 65px rgba(0, 0, 0, 0.14));
+  margin: 0 3rem 2rem 3rem;
+}
+
+.item .imageContainer .imgBG {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  z-index: -5;
+  background-color: var(--grayEB);
+}
+
+.item .info {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transform: translate(-25%, 30%);
+          transform: translate(-25%, 30%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item .info .category {
+  font-family: "League Spartan";
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #7a7a7a;
+}
+
+.item .info .title {
+  color: #323232;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.item .info div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
+.item .info div .price {
+  color: var(--pink);
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.item .info div .buy {
+  font-family: "League Spartan";
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=CarouselItem.module.css.map */

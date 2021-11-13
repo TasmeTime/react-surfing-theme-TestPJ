@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  max-height: 600px;
+  margin-bottom: 100px;
+}
+.leftContent {
+  grid-column: 2/8;
+  grid-row: 1/7;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 60%;
+    margin-left: 5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    p {
+      margin: 2rem 0;
+      opacity: 0.65;
+      font-family: "Poppins";
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+  }
+  .readMore {
+    border-bottom: 2px solid var(--primary);
+    font-family: "League Spartan";
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+  }
+}
+.rightContent {
+  grid-column: 7/14;
+  grid-row: 2/8;
+  position: relative;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    cursor: pointer;
+    box-shadow: -1px -1px 35px 0px rgba(0, 0, 0, 0.13);
+  }
+
+  i {
+    font-size: 3rem;
+    transform: translate(5%, 5%);
+    color: white;
+  }
+}

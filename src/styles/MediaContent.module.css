@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  max-height: 600px;
+  margin-bottom: 100px;
+}
+
+.leftContent {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftContent div {
+  width: 60%;
+  margin-left: 5rem;
+}
+
+.leftContent div img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftContent div p {
+  margin: 2rem 0;
+  opacity: 0.65;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+
+.leftContent .readMore {
+  border-bottom: 2px solid var(--primary);
+  font-family: "League Spartan";
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+.rightContent {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 7;
+  grid-column: 7/14;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 6;
+  grid-row: 2/8;
+  position: relative;
+}
+
+.rightContent video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rightContent span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary);
+  cursor: pointer;
+  -webkit-box-shadow: -1px -1px 35px 0px rgba(0, 0, 0, 0.13);
+          box-shadow: -1px -1px 35px 0px rgba(0, 0, 0, 0.13);
+}
+
+.rightContent i {
+  font-size: 3rem;
+  -webkit-transform: translate(5%, 5%);
+          transform: translate(5%, 5%);
+  color: white;
+}
+/*# sourceMappingURL=MediaContent.module.css.map */

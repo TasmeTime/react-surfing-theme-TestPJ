@@ -1,0 +1,132 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 126px 1fr;
+}
+.header {
+  grid-column: 2/14;
+  grid-row: 1/1;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  align-items: center;
+  column-gap: 0.5rem;
+
+  .logo {
+    grid-column: 1/1;
+  }
+
+  nav {
+    grid-column: 3/6;
+    display: flex;
+    column-gap: 1.7rem;
+
+    .navItem {
+      padding: 5px 10px;
+      color: var(--black);
+      font-family: "League Spartan";
+      font-size: 0.8rem;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    :first-child {
+      padding-left: 0;
+    }
+  }
+}
+.heroContent {
+  grid-column: 2/14;
+  grid-row: 2/2;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  position: relative;
+
+  .sliderImage {
+    grid-column: 3/14;
+    // max-height: 500px;
+    width: 100%;
+    box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2);
+  }
+
+  .textContainer {
+    position: absolute;
+
+    h6 {
+      font-family: "League Spartan";
+      color: var(--primary);
+      opacity: 0.6;
+      margin: 0.3rem 0;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin: 0.5rem 0;
+    }
+    p {
+      color: var(--gray);
+      margin: 0.3rem 0;
+    }
+  }
+
+  .sliderControl {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    display: flex;
+    column-gap: 0.3rem;
+    align-items: center;
+
+    span {
+      font-size: 0.9rem;
+      font-family: "League Spartan";
+    }
+
+    .active {
+      color: var(--primary);
+    }
+
+    i {
+      font-size: 1.5rem;
+      color: var(--gray);
+      cursor: pointer;
+      opacity: 0.35;
+      transition: opacity 0.5s;
+    }
+
+    i:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.sideCol {
+  grid-column: 14/14;
+  grid-row: 1 / span 2;
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h3 {
+    transform: rotateZ(-90deg) translateX(-80%);
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    font-family: "League Spartan";
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 0.8rem;
+    opacity: 0.2;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+
+  img {
+    grid-column: 1/8;
+    width: calc(100% + 3rem);
+    margin-right: 0;
+    margin-left: -3rem;
+  }
+
+  section {
+    grid-column: 8/13;
+    padding-left: 3rem;
+
+    h5 {
+      font-family: "League Spartan";
+      font-weight: bold;
+      opacity: 0.27;
+      letter-spacing: 3px;
+    }
+
+    address {
+      padding-left: 3rem;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      font-family: "League Spartan";
+      font-weight: bold;
+      letter-spacing: 4px;
+      font-size: 0.8rem;
+      padding-bottom: 0.4rem;
+      align-self: flex-start;
+    }
+  }
+}

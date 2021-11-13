@@ -1,0 +1,87 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 200px;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  -ms-grid-rows: 80px auto auto auto;
+      grid-template-rows: 80px auto auto auto;
+  padding: 0 1.5rem;
+}
+
+.container .line {
+  -ms-grid-column: 8;
+  grid-column: 8/8;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  border-left: 3px solid var(--primary);
+}
+
+.container h1 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6/10;
+  font-family: "Playfair Display";
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.35rem;
+  margin: 2rem 0 0 0;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.container h4 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+.container form {
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container form input {
+  -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.03);
+  border: none;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.1rem 1.5rem;
+  background-color: #f4f4f4;
+  font-family: "League Spartan";
+  letter-spacing: 3px;
+}
+
+.container form input:focus {
+  outline: none;
+}
+
+.container form button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: var(--primary);
+}
+
+.container form button i {
+  color: white;
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=Subscribe.module.css.map */

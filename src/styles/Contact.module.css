@@ -1,0 +1,52 @@
+.container {
+  margin-bottom: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+}
+
+.container img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  width: calc(100% + 3rem);
+  margin-right: 0;
+  margin-left: -3rem;
+}
+
+.container section {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8/13;
+  padding-left: 3rem;
+}
+
+.container section h5 {
+  font-family: "League Spartan";
+  font-weight: bold;
+  opacity: 0.27;
+  letter-spacing: 3px;
+}
+
+.container section address {
+  padding-left: 3rem;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.container section a {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  font-family: "League Spartan";
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  padding-bottom: 0.4rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+/*# sourceMappingURL=Contact.module.css.map */

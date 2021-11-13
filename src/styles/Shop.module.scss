@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  margin-bottom: 100px;
+}
+.heading {
+  grid-column: 7/9;
+  grid-row: 1/1;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  span {
+    font-family: "League Spartan";
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary);
+    letter-spacing: 3px;
+  }
+  h1 {
+    margin: 0;
+    font-family: "Playfair Display";
+    color: #323232;
+    font-size: 2.3rem;
+  }
+}
+.carousel {
+  grid-column: 2/15;
+
+  grid-row: 2/2;
+  display: flex;
+  position: relative;
+
+  .controls {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
+.showAll {
+  grid-column: 7/9;
+  grid-row: 3/3;
+  border-bottom: 2px solid var(--primary);
+  font-family: "League Spartan";
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  justify-self: center;
+  margin-top: 4rem;
+}

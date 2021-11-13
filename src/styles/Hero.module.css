@@ -1,0 +1,192 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  -ms-grid-rows: 126px 1fr;
+      grid-template-rows: 126px 1fr;
+}
+
+.header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 12;
+  grid-column: 2/14;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[13];
+      grid-template-columns: repeat(13, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.header .logo {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.header nav {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3/6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.7rem;
+          column-gap: 1.7rem;
+}
+
+.header nav .navItem {
+  padding: 5px 10px;
+  color: var(--black);
+  font-family: "League Spartan";
+  font-size: 0.8rem;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.header nav :first-child {
+  padding-left: 0;
+}
+
+.heroContent {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 12;
+  grid-column: 2/14;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[13];
+      grid-template-columns: repeat(13, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.heroContent .sliderImage {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 11;
+  grid-column: 3/14;
+  width: 100%;
+  -webkit-box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2);
+          box-shadow: -16px 25px 65px 0px rgba(11, 12, 17, 0.2);
+}
+
+.heroContent .textContainer {
+  position: absolute;
+}
+
+.heroContent .textContainer h6 {
+  font-family: "League Spartan";
+  color: var(--primary);
+  opacity: 0.6;
+  margin: 0.3rem 0;
+}
+
+.heroContent .textContainer h1 {
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
+}
+
+.heroContent .textContainer p {
+  color: var(--gray);
+  margin: 0.3rem 0;
+}
+
+.heroContent .sliderControl {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-flex-item-align: end;
+      align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.3rem;
+          column-gap: 0.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroContent .sliderControl span {
+  font-size: 0.9rem;
+  font-family: "League Spartan";
+}
+
+.heroContent .sliderControl .active {
+  color: var(--primary);
+}
+
+.heroContent .sliderControl i {
+  font-size: 1.5rem;
+  color: var(--gray);
+  cursor: pointer;
+  opacity: 0.35;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.heroContent .sliderControl i:hover {
+  opacity: 0.9;
+}
+
+.sideCol {
+  -ms-grid-column: 14;
+  grid-column: 14/14;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sideCol h3 {
+  -webkit-transform: rotateZ(-90deg) translateX(-80%);
+          transform: rotateZ(-90deg) translateX(-80%);
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  font-family: "League Spartan";
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 0.8rem;
+  opacity: 0.2;
+}
+
+.sideCol .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+}
+/*# sourceMappingURL=Hero.module.css.map */

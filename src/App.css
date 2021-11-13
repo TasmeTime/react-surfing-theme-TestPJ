@@ -1,0 +1,86 @@
+:root {
+  --primary: #5da8ef;
+  --black: #0b0b10;
+  --black32: #323232;
+  --gray: #8f8f8f;
+  --grayEB: #ebebeb;
+  --pink: #ce60a8;
+}
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+@font-face {
+  font-family: "League Spartan";
+  src: url("./assets/fonts/LeagueSpartan-VF.woff2") format("woff2"),
+    url("./assets/fonts/LeagueSpartan-VF.woff") format("woff"),
+    url("./assets/fonts/LeagueSpartan-VF.ttf") format("truetype");
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--black);
+}
+
+.App {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: relative;
+}
+
+.bgLineContainer {
+  position: fixed;
+  left: 0;
+  margin: 0 3rem;
+  top: 0;
+  right: 0;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(14, 1fr);
+  z-index: -10;
+}
+
+.bgLine {
+  border-left: 1px solid #585858;
+  opacity: 0.1;
+}
+
+.l1 {
+  grid-column: 2/2;
+}
+.l2 {
+  grid-column: 5/5;
+}
+.l3 {
+  grid-column: 8/8;
+}
+.l4 {
+  grid-column: 11/11;
+}
+.l5 {
+  grid-column: 14/14;
+}
+
+.bgImagesContainer {
+  display: grid;
+  /* grid-template-rows: repeat(23, 1fr);
+  grid-template-columns: 1fr; */
+  z-index: -15;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.bgImg2 {
+  width: 100%;
+  grid-row: 14 / span 5;
+  opacity: 0.05;
+}
+.bgImg1 {
+  width: 100%;
+  grid-row: 22;
+  opacity: 0.03;
+}

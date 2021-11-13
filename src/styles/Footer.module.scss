@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-bottom: 100px;
+
+  img {
+    width: fit-content;
+  }
+  nav {
+    display: flex;
+    column-gap: 1.7rem;
+
+    .navItem {
+      padding: 5px 10px;
+      color: var(--black);
+      font-family: "League Spartan";
+      font-size: 0.8rem;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+  }
+  .socialMedia {
+    display: flex;
+    column-gap: 2rem;
+  }
+}
